@@ -15,10 +15,16 @@ class App extends Component {
     return (
       <div className="page">
         <Header />
-        <Bio />
-        <Work />
-        <Education />
-        <Skills />
+        <div className="block-row-container">
+          <div className="block-col-container">
+            <Bio />
+            <Skills />
+          </div>
+          <div className="block-col-container">
+            <Work />
+            <Education />
+          </div>
+        </div>
       </div>
     );
   }

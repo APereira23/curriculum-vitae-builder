@@ -11,20 +11,16 @@ class Bio extends Component {
 
   }
   
-  log = () => {console.log()};
-
   render() {
     return (
       <div className="bio-container">
-        {console.clear()}
-        {this.log()}
         <table>
-          <thead>
+          <tbody>
             {bio.map((cat) => {
               return (
                 <>
                   <tr>
-                    <td>{cat.title}</td>
+                    <td className="bio-category">{cat.title}</td>
                   </tr>
                   <tr>
                   {Object.entries(cat.contents).map((field) => {
@@ -39,11 +35,12 @@ class Bio extends Component {
                       </tr>
                     );
                   })}
+                  <br></br>
                   </tr>
                 </>
               );
             })}
-          </thead>
+          </tbody>
         </table>
       </div>
     );
