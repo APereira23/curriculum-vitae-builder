@@ -21,11 +21,17 @@ const bio = [
     ]
   },
   {
+    title: "Portefólio Digital",
+    id: uniqid(),
+    contents: [
+      "https://github.com/APereira23",
+    ]
+  },
+  {
     title: "Informação adicional",
     id: uniqid(),
     contents: [
       "Carta de Condução (B, B1)",
-      "Portefólio: https://github.com/APereira23"
     ]
   }
 ];
@@ -68,6 +74,7 @@ const education = [
     course: "Teoria da Literatura",
     when: "2017-2020",
     where: "Faculdade de Letras da Universidade de Lisboa",
+    link: "https://repositorio.ul.pt/handle/10451/50853",
     id: uniqid(),
   },
   {
@@ -94,7 +101,11 @@ const skills = [
   },
   {
     id: uniqid(),
-    text: "- Elevado sentido de responsabilidade e compromisso no desempenho das tarefas a realizar."
+    text: "- Elevado sentido de responsabilidade e compromisso no desempenho das tarefas a realizar;"
+  },
+  {
+    id: uniqid(),
+    text: "- Interesses: linguística; estudo musical; escrita (publicação de artigos e ensaios em várias revistas afetas à Faculdade de Letras da Universidade de Lisboa)."
   }  
 ];
 

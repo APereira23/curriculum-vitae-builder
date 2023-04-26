@@ -8,8 +8,8 @@ class Education extends Component {
     this.state = {
       education: education
     }
-
   }
+
   
   render() {
     {console.clear()}
@@ -38,6 +38,11 @@ class Education extends Component {
                   </tr>
                   <tr>
                     <td className="degree-where">{degree.where}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a className="degree-link" href={degree.link}>{degree.link}</a>
+                    </td>
                   </tr>
                 <br></br>
                 </>

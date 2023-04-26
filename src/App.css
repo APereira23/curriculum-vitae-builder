@@ -67,6 +67,7 @@
 
 .job-when {
   padding: 0.5rem 0;
+  font-style: italic;
 }
 
 .job-where {
@@ -102,6 +103,7 @@
 
 .degree-when {
   padding: 0.5rem 0;
+  font-style: italic;
 }
 
 .degree-where {
