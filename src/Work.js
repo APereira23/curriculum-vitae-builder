@@ -39,7 +39,7 @@ class Work extends Component {
                     return (
                     <>
                       <tr>
-                        <td className="job-task">{task}</td>
+                        <td className="job-task">&#x2022; {task}</td>
                       </tr>
                     </>
                     );
