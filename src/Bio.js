@@ -18,17 +18,18 @@ class Bio extends Component {
   
   render() {
     return (
-      <div className="bio-container">
+      <div className="bio-container container">
         <table>
           <tbody>
             {bio.map((cat) => {
               return (
                 <>
                   <tr>
-                    <td className="bio-category">{cat.title}</td>
+                    <td className="bio-category section-title">{cat.title}</td>
                   </tr>
                   <tr>
                   {Object.entries(cat.contents).map((field) => {
+                    if (field[0] === "Nome") return;
                     if (Number.isInteger(parseInt(field[0]))) { //checks if element has a key-prop combo, or is a single prop
                       if (this.isUrl(field[1])) {
                         return (
@@ -41,7 +42,7 @@ class Bio extends Component {
                       }
                       return (
                         <tr>
-                          <td className="bio-prop">{field[1]}</td>  
+                          <td className="bio-prop">&#x2022; {field[1]}</td>  
                         </tr>
                         );
                     } else {

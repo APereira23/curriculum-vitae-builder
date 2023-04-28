@@ -32,6 +32,7 @@ const bio = [
     id: uniqid(),
     contents: [
       "Carta de Condução (B, B1)",
+      //add new string
     ]
   }
 ];
@@ -41,12 +42,12 @@ const work = [
     title: "Coordenador Pedagógico / Técnico Administrativo",
     when: "setembro 2020 - agosto 2022",
     where: "EXPLICOLÂNDIA Centro de Estudos (Lisboa-Alvalade)",
-    tasks: [
-      "Coordenação da equipa de professores (horários, alocamento de salas)",
-      "Comunicação entre o aluno, o encarregado de educação e o professor",
-      "Atendimento personalizado ao cliente",
-      "Tratamento de folhas de pagamento",
-      "Realização de entrevistas para recrutamento de novos professores",
+    tasks: [ //each task as an array string
+      "Coordenação da equipa de professores (horários, alocamento de salas);",
+      "Comunicação entre o aluno, o encarregado de educação e o professor;",
+      "Atendimento personalizado ao cliente;",
+      "Tratamento de folhas de pagamento;",
+      "Realização de entrevistas para recrutamento de novos professores.",
     ],
     id: uniqid(),
   },
@@ -56,7 +57,7 @@ const work = [
     where: "EXPLICOLÂNDIA Centro de Estudos (Lisboa-Alvalade)",
     tasks: [
       "Aulas individuais de Português, Inglês e Filosofia;",
-      "Organização de planos de preparação para os Exames Nacionais;"
+      "Organização de planos de preparação para os Exames Nacionais."
     ],
     id: uniqid(),
   },
@@ -76,7 +77,7 @@ const education = [
     course: "Teoria da Literatura",
     when: "2017-2020",
     where: "Faculdade de Letras da Universidade de Lisboa",
-    link: "https://repositorio.ul.pt/handle/10451/50853",
+    link: "http://hdl.handle.net/10451/50853",
     id: uniqid(),
   },
   {
@@ -91,19 +92,19 @@ const education = [
 const skills = [
   {
     id: uniqid(),
-    text: " Facilidade no uso das várias funcionalidades do Microsoft Excel (pivot tables, VLookup, etc.);",
+    text: "Facilidade no uso das várias funcionalidades do Microsoft Excel (pivot tables, VLookup, etc.);",
   },
   {
     id: uniqid(),
-    text: " Conhecimentos de programação na vertente Frontend (HTML, CSS, Javascript/React.js);",
+    text: "Conhecimentos de programação na vertente Frontend (HTML, CSS, Javascript/React.js);",
   },
   {
     id: uniqid(),
-    text: " Excelentes competências de comunicação escrita e oral;",
+    text: "Excelentes competências de comunicação escrita e oral;",
   },
   {
     id: uniqid(),
-    text: " Elevado sentido de responsabilidade e compromisso no desempenho das tarefas a realizar;"
+    text: "Elevado sentido de responsabilidade e compromisso no desempenho das tarefas a realizar."
   },
 ];
 

@@ -13,12 +13,12 @@ class Work extends Component {
   
   render() {
     return (
-      <div className="work-container">
+      <div className="work-container container">
         <table>
           <thead>
             <tr>
               <td>
-                <h3 className="work-title">Experiência Profissional</h3>
+                <h3 className="work-title section-title">Experiência Profissional</h3>
               </td>
             </tr>
           </thead>

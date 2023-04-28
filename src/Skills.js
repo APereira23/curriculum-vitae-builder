@@ -12,10 +12,10 @@ class Skills extends Component {
   render() {
     return (
       <>
-        <div className="skills-container">
+        <div className="skills-container container">
           <table>
             <thead>
-              <tr className="skills-title">Competências</tr>
+              <tr className="skills-title section-title">Competências</tr>
               <br></br>
             </thead>
             <tbody>
@@ -29,10 +29,10 @@ class Skills extends Component {
             </tbody>
           </table>
         </div>
-        <div className="hobbies-container">
+        <div className="hobbies-container container">
           <table>
             <thead>
-              <tr className="hobbies-title">Interesses</tr>
+              <tr className="hobbies-title section-title">Interesses</tr>
             </thead>
             <tbody>
               {hobbies.map((hobby) => {

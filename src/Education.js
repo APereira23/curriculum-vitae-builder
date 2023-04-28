@@ -14,18 +14,34 @@ class Education extends Component {
   render() {
     {console.clear()}
     return (
-      <div className="education-container">
+      <div className="education-container container">
         <table>
           <thead>
             <tr>
               <td>
-                <h3 className="education-title">Formação Académica</h3>
+                <h3 className="education-title section-title">Formação Académica</h3>
               </td>
             </tr>
           </thead>
           <tbody>
             {education.map((degree) => {
-              return (
+              return (!degree.link) ? (
+                <>
+                  <tr>
+                    <td className="degree-title">{degree.title}</td>
+                  </tr>
+                  <tr>
+                    <td className="degree-course">{degree.course}</td>
+                  </tr>
+                  <tr>
+                    <td className="degree-when">{degree.when}</td>
+                  </tr>
+                  <tr>
+                    <td className="degree-where">{degree.where}</td>
+                  </tr>
+                <br></br>
+                </>
+              ) : (
                 <>
                   <tr>
                     <td className="degree-title">{degree.title}</td>
@@ -40,8 +56,8 @@ class Education extends Component {
                     <td className="degree-where">{degree.where}</td>
                   </tr>
                   <tr>
-                    <td>
-                      <a className="degree-link" href={degree.link}>{degree.link}</a>
+                    <td className="degree-link">
+                      Link dissertação: <a href={degree.link}>{degree.link}</a>
                     </td>
                   </tr>
                 <br></br>

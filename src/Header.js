@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import photo from "./photo.jpeg";
+import { bio } from "./data.js"
 
 class Header extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
@@ -13,7 +13,7 @@ class Header extends Component {
         <div className="photo-container">
           <img src={photo} className="header-photo" />
         </div>
-        <h1 className="header-name">António Flávio Marques Pereira</h1>
+        <h1 className="header-name section-title">{bio[0].contents.Nome}</h1>
       </div>
     );
   }

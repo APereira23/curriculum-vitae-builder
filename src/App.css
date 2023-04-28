@@ -1,3 +1,14 @@
+
+/* COLOR SCHEME */
+
+:root {
+  --primary-color: rgb(13, 35, 73);
+  --secondary-color: rgb(5, 60, 156);
+  --text-color: black;
+  --header-color: rgb(218, 225, 237);
+  --background-color: white;
+}
+
 .page {
   max-width: 900px;
   margin: 0 auto;
@@ -5,32 +16,66 @@
   font-size: 13px;
 }
 
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.container {
+  border:solid 1px;
+  border-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.section-title {
+  color: var(--primary-color);
+}
+.header-container {
+  background-color: var(--header-color);
+}
+.job-title,
+.degree-title {
+  background-color: var(--header-color);
+}
+.job-where {
+  color: var(--secondary-color)
+}
+
+
 /* Header */
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  border-radius: 10px;
+  border-bottom-right-radius: 60%;
 }
 
 .header-photo {
-  height: 100%;
-  width: auto;
-  max-width: 60%;
-  object-fit: cover;
+  width: 45%;
+  margin: 10px;
   border-radius: 5%;
 }
 
 .header-name {
-  margin-left: 10px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 
+/* Block containers styling */
+.block-row-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-col-container {
+  width: 48%;
+}
+
 /* Bio styling */
 .bio-container {
   width: 100%;
-  border: solid 1px;
+  padding-top: 2%;
 }
 
 .bio-category {
@@ -45,32 +90,38 @@
 
 .bio-prop {
   padding: 0.2rem 0;
+  text-indent: 20px;
 }
 
 /* Work styling */
 .work-container {
   width: 100%;
-  border: solid 1px;
-
+  padding-top: 2%;
 }
 
 .work-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0%;
+  padding-left: 6px;
+
 }
 
 .job-title {
   font-weight: bold;
+  font-size: 0.9rem;
+  padding-left: 6px;
+  border-radius: 5px;
 }
 
 .job-when {
-  padding: 0.5rem 0;
   font-style: italic;
+  padding-left: 6px;
 }
 
 .job-where {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 6px;
 }
 
 .job-task {
@@ -81,8 +132,6 @@
 /* Education styling */
 .education-container {
   width: 100%;
-  border: solid 1px;
-
 }
 
 .education-title {
@@ -92,24 +141,32 @@
 }
 
 .degree-title {
+  padding-left: 6px;
   font-weight: bold;
+  font-size: 0.9rem;
+  width: 50vw;
+  border-radius: 5px;
 }
 
 .degree-course {
+  padding-left: 6px;
+  font-weight: bold;
 }
 
 .degree-when {
+  padding-left: 6px;
   font-style: italic;
 }
 
 .degree-where {
+  padding-left: 6px;
 }
-
+.degree-link {
+  padding-left: 6px;
+}
 /* Skills styling */
 .skills-container {
   width: 100%;
-  border: solid 1px;
-
 }
 
 .skills-title {
@@ -118,11 +175,12 @@
 }
 
 .skills-item {
-  text-indent: 5%;
+  text-indent: 20px;
+  margin: 1%;
 }
 
 .hobbies-container {
-  border: solid 1px;
+  padding-top: 4%;
   width: 100%;
 }
 
@@ -132,15 +190,7 @@
 }
 
 .hobbies-item {
-  text-indent: 5%;
+  text-indent: 20px;
+  margin: 1%;
 }
 
-/* Block containers styling */
-.block-row-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.block-col-container {
-  width: 48%;
-}
