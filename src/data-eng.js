@@ -46,9 +46,9 @@ const work = [
     tasks: [ //each task as an array string
       "Manage work schedules;",
       "Manage information flow between parents, students and their respective tutor;",
-      "Enrollments and customer service;",
+      "Handle enrollments and customer service;",
       "Process payroll sheets;",
-      "Handle the recruitment of new tutors.",
+      "Handle recruitment of new tutors.",
     ],
     id: uniqid(),
   },
@@ -97,7 +97,7 @@ const skills = [
   },
   {
     id: uniqid(),
-    text: "Junior Web Developer coding skills (HTML, CSS, Javascript/React.js)",
+    text: "Junior Web Developer coding skills (HTML, CSS, Javascript/React.js);",
   },
   {
     id: uniqid(),
