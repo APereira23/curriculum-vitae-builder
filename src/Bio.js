@@ -40,8 +40,8 @@ class Bio extends Component {
                       if (this.isUrl(field[1])) {
                         return (
                           <tr>
-                            <td>
-                              <a className="bio-prop" href={field[1]}>{field[1]}</a>
+                            <td className="bio-prop">
+                              <a href={field[1]}>{field[1]}</a>
                             </td>  
                           </tr>
                         );
