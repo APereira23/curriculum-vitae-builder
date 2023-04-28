@@ -115,7 +115,11 @@ const hobbies = [
   },
   {
     id: uniqid(),
-    text: "Escrita (publicação de artigos e ensaios em várias revistas afetas à Faculdade de Letras da Universidade de Lisboa)."
+    text: "Escrita (publicação de artigos e ensaios sobre cultura e estudos literários em várias revistas afetas à Faculdade de Letras da Universidade de Lisboa);"
+  },
+  {
+    id: uniqid(),
+    text: "Ciências informáticas."
   }
 ];
 

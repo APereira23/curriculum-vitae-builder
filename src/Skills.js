@@ -34,6 +34,7 @@ class Skills extends Component {
             <thead>
               <tr className="hobbies-title section-title">Interesses</tr>
             </thead>
+            <br></br>
             <tbody>
               {hobbies.map((hobby) => {
                 return (
