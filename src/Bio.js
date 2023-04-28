@@ -30,6 +30,12 @@ class Bio extends Component {
                   <tr>
                   {Object.entries(cat.contents).map((field) => {
                     if (field[0] === "Nome") return;
+                    if (field[0] === "LinkedIn") return (
+                      <tr>
+                        <td className="bio-key">{field[0]}:</td>
+                        <td className="bio-prop"><a href={field[1]}>{field[1]}</a></td>
+                      </tr>
+                    );
                     if (Number.isInteger(parseInt(field[0]))) { //checks if element has a key-prop combo, or is a single prop
                       if (this.isUrl(field[1])) {
                         return (

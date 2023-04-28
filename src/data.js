@@ -9,6 +9,7 @@ const bio = [
       Email: "antoniofmpereira@gmail.com",
       Telemóvel: "+351 928154529",
       Cidade: "Lisboa, Portugal",
+      LinkedIn: "https://bit.ly/4220rhj",
     }
   },
   {
