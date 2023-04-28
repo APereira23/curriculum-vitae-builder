@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { skills, hobbies } from "./data.js";
+import { skills, hobbies } from "./data-eng.js";
 
 class Skills extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class Skills extends Component {
         <div className="skills-container container">
           <table>
             <thead>
-              <tr className="skills-title section-title">Competências</tr>
+              <tr className="skills-title section-title">Skills</tr>
               <br></br>
             </thead>
             <tbody>
@@ -32,7 +32,7 @@ class Skills extends Component {
         <div className="hobbies-container container">
           <table>
             <thead>
-              <tr className="hobbies-title section-title">Interesses</tr>
+              <tr className="hobbies-title section-title">Interests / Hobbies</tr>
             </thead>
             <br></br>
             <tbody>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { bio } from "./data.js";
+import { bio } from "./data-eng.js";
 
 
 class Bio extends Component {
@@ -29,7 +29,7 @@ class Bio extends Component {
                   </tr>
                   <tr>
                   {Object.entries(cat.contents).map((field) => {
-                    if (field[0] === "Nome") return;
+                    if (field[0] === "Name") return;
                     if (field[0] === "LinkedIn") return (
                       <tr>
                         <td className="bio-key">{field[0]}:</td>

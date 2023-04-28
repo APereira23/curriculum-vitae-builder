@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import photo from "./photo.jpeg";
-import { bio } from "./data.js"
+import { bio } from "./data-eng.js"
 
 class Header extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class Header extends Component {
         <div className="photo-container">
           <img src={photo} className="header-photo" />
         </div>
-        <h1 className="header-name section-title">{bio[0].contents.Nome}</h1>
+        <h1 className="header-name section-title">{bio[0].contents.Name}</h1>
       </div>
     );
   }

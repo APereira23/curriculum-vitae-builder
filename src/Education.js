@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { education } from "./data.js";
+import { education } from "./data-eng.js";
 
 
 class Education extends Component {
@@ -19,7 +19,7 @@ class Education extends Component {
           <thead>
             <tr>
               <td>
-                <h3 className="education-title section-title">Formação Académica</h3>
+                <h3 className="education-title section-title">Education</h3>
               </td>
             </tr>
           </thead>
@@ -57,7 +57,7 @@ class Education extends Component {
                   </tr>
                   <tr>
                     <td className="degree-link">
-                      Link dissertação: <a href={degree.link}>{degree.link}</a>
+                      Dissertation link: <a href={degree.link}>{degree.link}</a>
                     </td>
                   </tr>
                 <br></br>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { work } from "./data.js";
+import { work } from "./data-eng.js";
 
 
 class Work extends Component {
@@ -18,7 +18,7 @@ class Work extends Component {
           <thead>
             <tr>
               <td>
-                <h3 className="work-title section-title">Experiência Profissional</h3>
+                <h3 className="work-title section-title">Work Experience</h3>
               </td>
             </tr>
           </thead>
